@@ -20,7 +20,7 @@ const fileOps = async () => {
     }
 }
 
-fileOps();
+fileOps(); 
 
 // fs.readFile('./files/starter.txt', (err, data) => {
 //     if(err) throw err;
