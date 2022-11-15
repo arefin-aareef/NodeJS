@@ -67,23 +67,23 @@ process.on('uncaughtException', err => {
 
 // updating
 
-// fs.writeFile(path.join(__dirname, 'files', 'reply.txt'), 'Hi there.', (err) => {
-//     if(err) throw err;
-//     console.log('Write complete');
+fs.writeFile(path.join(__dirname, 'files', 'reply.txt'), 'Hi there.', (err) => {
+    if(err) throw err;
+    console.log('Write complete');
 
-//     // adding value to file
-//     fs.appendFile(path.join(__dirname, 'files', 'reply.txt'), 'Testing Append.', (err) => {
-//         if(err) throw err;
-//         console.log('Append complete');
+    // adding value to file
+    fs.appendFile(path.join(__dirname, 'files', 'reply.txt'), 'Testing Append.', (err) => {
+        if(err) throw err;
+        console.log('Append complete');
 
-//         // rename file
-//         fs.rename(path.join(__dirname, 'files', 'reply.txt'),path.join(__dirname, 'files', 'newReply.txt'), (err) => {
-//             if(err) throw err;
-//             console.log('Rename complete');
-//         })
-//     })
+        // rename file
+        fs.rename(path.join(__dirname, 'files', 'reply.txt'),path.join(__dirname, 'files', 'newReply.txt'), (err) => {
+            if(err) throw err;
+            console.log('Rename complete');
+        })
+    })
 
-// })
+})
 
 
 
